@@ -7,8 +7,8 @@ module UsdaNutrientDatabase
       @version = version
     end
 
-    def import
-      downloader.download_and_unzip
+    def import(download: true)
+      downloader.download_and_unzip if download
       importer_names.each { |importer_name| importer_for(importer_name).import }
     ensure
       downloader.cleanup
