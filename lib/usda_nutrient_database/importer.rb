@@ -17,14 +17,12 @@ module UsdaNutrientDatabase
     private
 
     def importer_names
+      # FoodGroups, SourceCodes, Nutrients, Foods, FoodsNutrients, Weights, Footnotes
       [
-        'FoodGroups',
-        'SourceCodes',
         'Nutrients',
         'Foods',
         'FoodsNutrients',
-        'Weights',
-        'Footnotes'
+        'Weights'
       ]
     end
 
